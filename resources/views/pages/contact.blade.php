@@ -15,3 +15,7 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</p>
 @stop
+
+@section('footer')
+	<span>&copy;2017 Ruban Selvarajah</span>
+@stop

@@ -1,0 +1,1513 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"peo",
+				"people"
+			],
+			[
+				"auth",
+				"Auth"
+			],
+			[
+				"tarikh",
+				"tarikh_resit"
+			],
+			[
+				"is_re",
+				"is_reject_warta"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"kone",
+				"komen-ydp"
+			],
+			[
+				"filter",
+				"filterQuery"
+			],
+			[
+				"old",
+				"oldElements"
+			],
+			[
+				"selec",
+				"selectNames"
+			],
+			[
+				"Caga",
+				"CagaranKelompokWarta"
+			],
+			[
+				"cagaran",
+				"cagaran_id"
+			],
+			[
+				"drop",
+				"dropdown-menu"
+			],
+			[
+				"gene",
+				"generateJasperPDF"
+			],
+			[
+				"toas",
+				"toastrStr"
+			],
+			[
+				"umum",
+				"umum_id"
+			],
+			[
+				"type",
+				"typeahead"
+			],
+			[
+				"get",
+				"getURL"
+			],
+			[
+				"senarai",
+				"senarai_no_syarikat"
+			],
+			[
+				"nama",
+				"nama_syarikat"
+			],
+			[
+				"ob",
+				"objConn"
+			],
+			[
+				"pemil",
+				"pemilikType"
+			],
+			[
+				"swal",
+				"swal_fx"
+			],
+			[
+				"swa",
+				"swal_fx"
+			],
+			[
+				"mps",
+				"mps_umum_id"
+			],
+			[
+				"carian",
+				"carianSyarikat"
+			],
+			[
+				"carianP",
+				"carianPemilikContainer"
+			],
+			[
+				"syar",
+				"syarikatInduk"
+			],
+			[
+				"cetakPukal",
+				"cetakPukalForm"
+			],
+			[
+				"sen",
+				"senaraiIdCagaran"
+			],
+			[
+				"click",
+				"clickedRows"
+			],
+			[
+				"idC",
+				"idCagaran"
+			],
+			[
+				"idCa",
+				"idCagaranKlmpkWarta"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"submi",
+				"submitForm"
+			],
+			[
+				"is_verify",
+				"is_verify_ydp"
+			],
+			[
+				"refresh",
+				"refreshParent"
+			],
+			[
+				"ne",
+				"next_route"
+			],
+			[
+				"cagara",
+				"cagaranMigrasi"
+			],
+			[
+				"user",
+				"user_details"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"passw",
+				"password_verify"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"ada",
+				"adaPembetulanMaklumat"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"tiada",
+				"tiadaStatus"
+			],
+			[
+				"cagaran_klmpk",
+				"cagaran_klmpk_warta_id"
+			],
+			[
+				"c",
+				"c"
+			],
+			[
+				"mp",
+				"mps_umum_id"
+			],
+			[
+				"u",
+				"u"
+			],
+			[
+				"Cagara",
+				"CagaranKlmpkWartaDetail"
+			],
+			[
+				"cagaran_klmp",
+				"cagaran_klmpk_warta_detail"
+			],
+			[
+				"sele",
+				"selectRaw"
+			],
+			[
+				"Cagaran",
+				"CagaranKelompokWarta"
+			],
+			[
+				"Tambah",
+				"tambahBatch"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/Http/Controllers/PagesController.php",
+			"settings":
+			{
+				"buffer_size": 991,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n    ////////////////////////////////////////////////////////////////////////\n    /// Debug\n    ////////////////////////////////////////////////////////////////////////\n    // Set to true to disable cache and enable debug output.\n    \"debug\": false,\n    // Set to true to run tests on startup,\n    \"run_tests\": false,\n\n    ////////////////////////////////////////////////////////////////////////\n    /// Themes\n    ////////////////////////////////////////////////////////////////////////\n    // Theme repo URL\n    \"repo_url\": \"https://github.com/Colorsublime/Colorsublime-Themes/archive/master.zip\",\n\n    ////////////////////////////////////////////////////////////////////////\n    /// Paths\n    ////////////////////////////////////////////////////////////////////////\n    // Paths are relative to your 'Browse Packages...' folder.\n    // Absolute paths are not allowed. Use '/', even on Windows.\n    ////////////////////////////////////////////////////////////////////////\n    // Where to store cached files.\n    \"cache_path\": \"Colorsublime - Themes/cache\",\n    // Where to put installed themes.\n    \"install_path\": \"Colorsublime - Themes\",\n\n    ////////////////////////////////////////////////////////////////////////\n    /// HTTP\n    ////////////////////////////////////////////////////////////////////////\n    // Amount of time to cache HTTP requests in seconds. (Default: 1 day)\n    \"cache_time\": 86400,\n    // HTTP timeout in seconds\n    \"http_timeout\": 10\n}\n",
+			"file": "/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/Colorsublime/Colorsublime.sublime-settings",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 1466,
+				"line_ending": "Windows",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/snippets/PHP Class.sublime-snippet",
+			"settings":
+			{
+				"buffer_size": 287,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/snippets/PHP Constructor.sublime-snippet",
+			"settings":
+			{
+				"buffer_size": 301,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"rename",
+				"ANF: Rename File"
+			],
+			[
+				"project",
+				"Project: Close"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Mate",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"Color",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"PackageRe",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"install",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"materia",
+				"Material Theme: Activate theme"
+			]
+		],
+		"width": 382.0
+	},
+	"console":
+	{
+		"height": 355.0,
+		"history":
+		[
+			"php artisan",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"mport urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Exceptions",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/config",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/layouts",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/pages",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/vendor"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/AController.php",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/Colorsublime.sublime-settings",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/Colorsublime/Colorsublime.sublime-settings",
+		"/C/My Web Sites/Betty Bintar/demo.webisir.com/bintar/index2.html",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/PHP Companion/PHP Companion.sublime-settings",
+		"/C/xampp/htdocs/old/pendaftaran/db_config.php",
+		"/C/My Web Sites/Betty Bintar/demo.webisir.com/bintar/js/jquery.min.js",
+		"/C/My Web Sites/Betty Bintar/demo.webisir.com/bintar/js/main.js",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/PHP Companion.sublime-settings",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/config/database.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/pages/contact.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/pages/about.blade.php",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/snippets/PHP Protected Method.sublime-snippet",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/snippets/PHP Method.sublime-snippet",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/Origami.sublime-settings",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/config/compile.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/learning-laravel-5.2.sublime-project",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/Material Theme/Preferences.sublime-settings",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/routes.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factory.php",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/Material Theme/messages.json",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/Material Theme/Material-Theme.sublime-theme",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/PagesController.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/.env",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations/2017_03_03_002141_create_articles_table.php",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations/2017_03_03_002729_add_excerpt_articles_table.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/config/app.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/layouts/master.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/app.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/composer.json",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5/composer.json",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5/config/app.php",
+		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec_entrust/resources/views/auth/login.blade.php",
+		"/C/xampp/htdocs/a.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/layouts/portal.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/app/Http/Routes/Frontend/PortalRoutes.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/auth/login.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/themes/modular-admin-html-1.1.0/dist/index.html",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/backend/sidebar.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/backend/footer.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/public/themes/backend/modular_admin/js/app.js",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/themes/modular-admin-html-1.1.0/dist/error-404-alt.html",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/backend/header.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/themes/modular-admin-html-1.1.0/dist/error-500-alt.html",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/app/Http/routes.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/app/Http/Routes/Frontend/AuthRoutes.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/app/Http/Routes/Backend/DashboardRoutes.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/app/Http/Controllers/Backend/DashboardController.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/backend/dashboard.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/layouts/backend.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/errors/404.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/errors/500.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/backend/footerscript.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/auth/headerscript.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/backend/headerscript.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/dashboard.html.dist",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Login/LoginController.php",
+		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/resources/assets/css/frontend/app.css",
+		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/gulpfile.js",
+		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/resources/views/frontend/auth/login.blade.php",
+		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/.env",
+		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/app/Http/Controllers/Backend/Access/Role/RoleController.php",
+		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/composer.json",
+		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/app/Http/Controllers/Backend/DashboardController.php",
+		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/app/Http/Controllers/Backend/Access/User/UserController.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/storage/framework/views/853b317b335505e957c6e68938333acf1c010840.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/storage/framework/views/e96105532c4802ea37287693db9d2b4f3da5bff6.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/MaklumatKutipan/LaporanKemaskiniKutipanController.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/storage/framework/views/791f6e060d8ec6128cd1c23e20e41a60a620f2d8.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/storage/framework/views/67ea803a2f17ddf2c1f7213f8375fd32ec0cdd37.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/DashboardController.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/cagaran/senarai_cagaran_aktif.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/maklumatkutipan/maklumat_kutipan_list.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/MaklumatKutipan/MaklumatKutipanController.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Cagaran/CagaranController.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/maklumatkutipan/laporan_kemaskini_kutipan_list.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/cagaran/senarai_cagaran_tamat_tempoh.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/footerscript.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/global_script.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Routes/MaklumatKutipanRoutes.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/warta/paparan_kelompok_warta.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/pelanggan_pendaftaran.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Warta/KelompokWartaController.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Warta/ProsesWartaController.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/warta/proses_warta.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Cagaran/CagaranTamatTempohController.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/.env",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Routes/CagaranRoute.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/warta/kelompok_warta.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Models/CagaranChecklist.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/dashboard_session.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/dashboard.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/vendor/laravel/framework/src/Illuminate/Http/Request.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/vendor/laravel/framework/src/Illuminate/Support/Facades/Input.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/vendor/symfony/console/Input/Input.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/storage/framework/views/93790fd6dd6ee2350bff006b527ecbebae93932e.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/maklumatkutipan/maklumat_kutipan_list.blade.php.ruban",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/config/database.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Controller.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Warta/TerimaanANMController.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Routes/breadcrumbs.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/config/breadcrumbs.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Routes/WartaRoutes.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/storage/framework/views/f6c05517ca34579a277bf1ae1051072e10adbd2b.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/storage/framework/views/d3251acb3dace18c1960416a9feba77cefb38413.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/warta/komen_ydpModal.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/warta/komen_pengarahModal.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/storage/framework/views/12a7bc3051a1eea721c2e0b98f4b4747c225d074.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Tuntutan/TuntutanController.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/cagaran/ulasan_pembatalan.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/tuntutan/semakan_ulasan_ptj.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/headerscript.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/cagaran/ulasan_rampasan.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/config/app.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/warta/terimaan_warta_kelompok_batal.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/sidebar.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Exceptions/Handler.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/vendor/psy/psysh/src/Psy/Exception/ErrorException.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/konfigurasi/kfg_jenis_bayaran.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/DataEntryController.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Models/KfgMenu.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/cagaran/cagaranTidakDituntut.blade.php",
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/ViewComposers/GlobalComposer.php"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\gates\\practice\\gates_mdec_entrust\\vendor",
+			"C:\\xampp\\htdocs\\gates\\practice\\laravel-5-boilerplate\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\app",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\public\\assets",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\public",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\app",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\resources",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\app\\Tests\\Unit",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\vendor\\laravel",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\app",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\app\\Http\\Controllers",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\app",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\vendor\\laravel",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\app\\Http\\Controllers",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\spb",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\resources",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\app\\Http\\Routes",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\app",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views\\cagaran",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\app\\Http\\Controllers",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\app\\Http\\Controllers\\Warta",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views\\warta",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\resources",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views\\cagaran",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views\\cagaran",
+			"C:\\Users\\Zyten\\Dropbox\\Source\\Ionic\\FXSNIPERTEAM-APP\\www",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\app\\Http\\Routes",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\app\\Models",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\app\\Http\\Routes",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\app\\Http\\Controllers",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan",
+			"C:\\xampp\\htdocs\\gates\\practice\\laravel-portfolio-cms\\resources\\views\\admin",
+			"C:\\xampp\\htdocs\\gates\\practice\\laravel-portfolio-cms",
+			"C:\\xampp\\htdocs\\gates\\practice\\laravel-portfolio-cms\\public",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan",
+			"C:\\xampp\\htdocs\\gates\\practice\\laravel-portfolio-cms\\vendor\\illuminate",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan",
+			"C:\\xampp\\htdocs\\gates\\practice\\laravel-portfolio-cms",
+			"C:\\xampp\\htdocs\\gates\\practice\\laravel-login",
+			"C:\\xampp\\htdocs\\gates\\practice\\laravel-login\\app",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\resources\\views",
+			"C:\\xampp\\htdocs\\gates\\project\\mps-ecagar\\app\\Http\\Controllers"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"font",
+			"sds",
+			"$name",
+			"name",
+			"$name",
+			"name",
+			"$people",
+			"foreach",
+			"section",
+			"38, 50, 56",
+			"withFlashDanger",
+			"headerscript",
+			"Config",
+			"$i",
+			"umum_id",
+			"kemaskini",
+			"btnpdf",
+			"carian",
+			"btnpdf",
+			"kemaskini",
+			"b.amaun",
+			"v.",
+			"\n<",
+			"semak_kelompok_batal",
+			"senaraiKelompokDibatalkan",
+			"$now",
+			"is_reject",
+			"remove",
+			"simpan",
+			"komenYdp",
+			"komenY",
+			"doneSwal",
+			"pengesahan_pengarah_kelompok_warta",
+			"tindakanK",
+			"hiddenCb",
+			"tindakanKelompok",
+			"tindakanKelompokWartaForm",
+			"Tarikh",
+			"subm",
+			"subme",
+			"submit",
+			"#static",
+			"static",
+			"update",
+			"YDP",
+			"ichec",
+			"5",
+			"SpbPerakaunan",
+			"DB",
+			"PDF",
+			"99748",
+			"old",
+			"H/P",
+			"noTelefon",
+			"H/P",
+			"<?",
+			"api",
+			"cetak_UMA",
+			"loadbox",
+			"status",
+			"anm",
+			"selelementNamesectNames",
+			"old",
+			"{{old",
+			"input",
+			"H/",
+			"noTelBimbit",
+			"check",
+			"icheck",
+			"check",
+			"MpsPemilik",
+			"checkbox",
+			"icheck",
+			"outline",
+			"table",
+			".datepicker",
+			".select2",
+			".flip-content",
+			"flip-content",
+			"main.js",
+			"path",
+			"setAssetsPath",
+			"getGlobalImgPath",
+			"disabled",
+			"body",
+			"eventBody",
+			"doneSwal",
+			"respo",
+			"ajax",
+			"modal",
+			"modalmanager",
+			"tindakanKelompokWartaForm",
+			"Pengesaha",
+			"placehol",
+			"NAMA BAHA",
+			"errorSwal",
+			"pendaftaran_form",
+			"SPBSi",
+			"PDO",
+			"popupCallback",
+			"postMessage",
+			"BCon",
+			"\\Cont",
+			"AllRoutesTest.php",
+			"test",
+			"\\Cont",
+			"Config",
+			"Controller",
+			"BaseController",
+			"generateJasperPDF(",
+			"generateJasperPDF()",
+			"generateJasperPDF",
+			"filter",
+			"Card",
+			"card",
+			"filter_card",
+			"cetak_makl",
+			"is_deleted",
+			"index",
+			"cetak",
+			"left",
+			"selectAll",
+			"selectall",
+			"$('#cetakPukalForm').addClass('hidden');",
+			"$('#cetakPukalForm').removeClass('hidden');",
+			"$('#cetakPukalForm').addClass('hidden');",
+			"$('#cetakPukalForm').removeClass('hidden');",
+			"$('#cetakPukalForm').addClass('hidden');"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"37, 43, 57",
+			"$q1",
+			"$('#cetakPukalToggle').prop('disabled', true);",
+			"$('#cetakPukalToggle').prop('disabled', false);",
+			"$('#cetakPukalToggle').prop('disabled', true);",
+			"$('#cetakPukalToggle').prop('disabled', true)",
+			"$('#cetakPukalToggle').prop('disabled', false)",
+			"$('#cetakPukalToggle').prop('disabled', function(i, v) { return !v; })",
+			"$('#cetakPukalForm').prop('disabled', function(i, v) { return !v; })",
+			"btnTutup",
+			"",
+			"Tutup",
+			"@if(isset($errors)) @if ($errors->has",
+			"@if(isset($errors)) @if ($errors->",
+			"@if(isset($errors)) @if ($errors->has",
+			"public/",
+			"public",
+			"senarai_cagaran_tamat_tempoh",
+			"CagaranTamatTempohController",
+			"nopaddingleft",
+			"Papar",
+			"<script src=\"{{ URL::asset('public/assets/",
+			"  //public $timestamps    = false;",
+			" //public $timestamps    = false;",
+			"//public $timestamps    = false;",
+			"cagaran_klmpk_warta",
+			"Kelompok",
+			"kelompok",
+			"Kelompok",
+			"kelompok",
+			"http://myportfolio.io/assets/",
+			"http://myportfolio.io/",
+			"{{public_path()}}/",
+			"use App\\Models\\Login;",
+			"../assets/index/",
+			"public/assets/index/",
+			"",
+			"../assets/",
+			"",
+			"<li>",
+			"<li style=\"display:inline-block; float:none;\">",
+			"<li>",
+			"<li style=\"display:inline-block; float:none;\">",
+			"public/assets/portfolio/img/",
+			"public/assets/portfolio/",
+			"public/portfolio/",
+			"../public/",
+			"public/assets/js/",
+			"public/assets/css/",
+			"public/assets/js/",
+			"Keputusan",
+			"keputusan",
+			"Keputusan",
+			"keputusan",
+			"Keputusan"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/Http/Controllers/PagesController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133,
+								133
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/Colorsublime/Colorsublime.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								319,
+								319
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/snippets/PHP Class.sublime-snippet",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 287,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								163,
+								163
+							]
+						],
+						"settings":
+						{
+							"default_extension": "sublime-snippet",
+							"syntax": "Packages/XML/XML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/snippets/PHP Constructor.sublime-snippet",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								175
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "learning-laravel-5.2.sublime-project",
+	"replace":
+	{
+		"height": 114.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pagesc",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				"auth",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"authc",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"",
+				"C:\\Users\\Zyten\\Documents\\Sublime\\snippets\\PHP Method.sublime-snippet"
+			],
+			[
+				"routes",
+				"app\\Http\\routes.php"
+			],
+			[
+				"app",
+				"config\\app.php"
+			],
+			[
+				"pages",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"login",
+				"resources\\views\\auth\\login.blade.php"
+			],
+			[
+				"app.p",
+				"config\\app.php"
+			],
+			[
+				"rout",
+				"app\\Http\\routes.php"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"registe",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\RegistersUsers.php"
+			],
+			[
+				"email2",
+				"resources\\views\\auth\\passwords\\email2.blade.php"
+			],
+			[
+				"email",
+				"resources\\views\\auth\\passwords\\email.blade.php"
+			],
+			[
+				"reset2",
+				"resources\\views\\auth\\passwords\\reset2.blade.php"
+			],
+			[
+				"rese",
+				"resources\\views\\auth\\passwords\\reset.blade.php"
+			],
+			[
+				"portal",
+				"resources\\views\\layouts\\portal.blade.php"
+			],
+			[
+				"error",
+				"resources\\themes\\modular-admin-html-1.1.0\\dist\\error-404-alt.html"
+			],
+			[
+				"40",
+				"resources\\views\\errors\\404.blade.php"
+			],
+			[
+				"backed",
+				"resources\\views\\layouts\\backend.blade.php"
+			],
+			[
+				"header",
+				"resources\\views\\backend\\header.blade.php"
+			],
+			[
+				"500",
+				"resources\\themes\\modular-admin-html-1.1.0\\dist\\error-500-alt.html"
+			],
+			[
+				"app.js",
+				"public\\themes\\backend\\modular_admin\\js\\app.js"
+			],
+			[
+				"error4",
+				"resources\\themes\\modular-admin-html-1.1.0\\dist\\error-404-alt.html"
+			],
+			[
+				"headerscr",
+				"resources\\views\\auth\\headerscript.blade.php"
+			],
+			[
+				"index.ht",
+				"resources\\themes\\modular-admin-html-1.1.0\\dist\\index.html"
+			],
+			[
+				"login.blade",
+				"resources\\views\\auth\\login.blade.php"
+			],
+			[
+				"index.html",
+				"resources\\themes\\modular-admin-html-1.1.0\\dist\\index.html"
+			],
+			[
+				"dashboard.ht",
+				"vendor\\phpunit\\php-code-coverage\\src\\CodeCoverage\\Report\\HTML\\Renderer\\Template\\dashboard.html.dist"
+			],
+			[
+				"routes.",
+				"app\\Http\\routes.php"
+			],
+			[
+				"welcom",
+				"resources\\views\\welcome.blade.php"
+			],
+			[
+				"loginc",
+				"app\\Http\\Controllers\\Login\\LoginController.php"
+			],
+			[
+				"register",
+				"resources\\views\\frontend\\auth\\register.blade.php"
+			],
+			[
+				"rolecontroller",
+				"app\\Http\\Controllers\\Backend\\Access\\Role\\RoleController.php"
+			],
+			[
+				"dashb",
+				"app\\Http\\Controllers\\Backend\\DashboardController.php"
+			],
+			[
+				"userc",
+				"app\\Http\\Controllers\\Backend\\Access\\User\\UserController.php"
+			],
+			[
+				"controller",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"mail",
+				"config\\mail.php"
+			],
+			[
+				"footer",
+				"resources\\views\\footerscript.blade.php"
+			],
+			[
+				"welcome",
+				"resources\\views\\welcome.blade.php"
+			],
+			[
+				"laporank",
+				"app\\Http\\Controllers\\MaklumatKutipan\\LaporanKemaskiniKutipanController.php"
+			],
+			[
+				"laporan_kemask",
+				"resources\\views\\maklumatkutipan\\laporan_kemaskini_kutipan_list.blade.php"
+			],
+			[
+				"laporan",
+				"app\\Http\\Controllers\\MaklumatKutipan\\LaporanKemaskiniKutipanController.php"
+			],
+			[
+				"cagarantama",
+				"app\\Http\\Controllers\\Cagaran\\CagaranTamatTempohController.php"
+			],
+			[
+				"senarai_cagaran",
+				"resources\\views\\cagaran\\senarai_cagaran_tamat_tempoh.blade.php"
+			],
+			[
+				"maklumatkutipan",
+				"app\\Http\\Controllers\\MaklumatKutipan\\MaklumatKutipanController.php"
+			],
+			[
+				"cagaran",
+				"app\\Http\\Controllers\\Cagaran\\CagaranController.php"
+			],
+			[
+				"maklumat_kut",
+				"resources\\views\\maklumatkutipan\\maklumat_kutipan_list.blade.php"
+			],
+			[
+				"cagaran_ak",
+				"resources\\views\\cagaran\\senarai_cagaran_aktif.blade.php"
+			],
+			[
+				"maklumatkutipanco",
+				"app\\Http\\Controllers\\MaklumatKutipan\\MaklumatKutipanController.php"
+			],
+			[
+				"maklumatku",
+				"app\\Http\\Routes\\MaklumatKutipanRoutes.php"
+			],
+			[
+				"67ea803a2f17ddf2c1f7213f8375fd32ec0cdd37.php",
+				"storage\\framework\\views\\67ea803a2f17ddf2c1f7213f8375fd32ec0cdd37.php"
+			],
+			[
+				"proseswar",
+				"app\\Http\\Controllers\\Warta\\ProsesWartaController.php"
+			],
+			[
+				"prosew",
+				"resources\\views\\warta\\proses_warta.blade.php"
+			],
+			[
+				"kelom",
+				"app\\Http\\Controllers\\Warta\\KelompokWartaController.php"
+			],
+			[
+				"cagarantamat",
+				"app\\Http\\Controllers\\Cagaran\\CagaranTamatTempohController.php"
+			],
+			[
+				"global_",
+				"resources\\views\\global_script.blade.php"
+			],
+			[
+				"cagaranroute",
+				"app\\Http\\Routes\\CagaranRoute.php"
+			],
+			[
+				"paparan_kelom",
+				"resources\\views\\warta\\paparan_kelompok_warta.blade.php"
+			],
+			[
+				"kelompok_warta",
+				"resources\\views\\warta\\kelompok_warta.blade.php"
+			],
+			[
+				"proses_warta",
+				"resources\\views\\warta\\proses_warta.blade.php"
+			],
+			[
+				"cagaranc",
+				"app\\Http\\Controllers\\Cagaran\\CagaranController.php"
+			],
+			[
+				"mak",
+				"resources\\views\\maklumatkutipan\\maklumat_kutipan_list.blade.php"
+			],
+			[
+				"pelanggan",
+				"resources\\views\\pelanggan_pendaftaran.blade.php"
+			],
+			[
+				"maklumatk",
+				"app\\Http\\Controllers\\MaklumatKutipan\\MaklumatKutipanController.php"
+			],
+			[
+				"dash",
+				"resources\\views\\dashboard_session.blade.php"
+			],
+			[
+				"global_s",
+				"resources\\views\\global_script.blade.php"
+			],
+			[
+				"http/req",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Http\\Request.php"
+			],
+			[
+				"illuminate/in",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Input.php"
+			],
+			[
+				"input",
+				"vendor\\symfony\\console\\Input\\Input.php"
+			],
+			[
+				"93790fd6dd6ee2350bff006b527ecbebae93932e.php",
+				"storage\\framework\\views\\93790fd6dd6ee2350bff006b527ecbebae93932e.php"
+			],
+			[
+				"dashboarc",
+				"app\\Http\\Controllers\\DashboardController.php"
+			],
+			[
+				"dashbo",
+				"resources\\views\\dashboard.blade.php"
+			],
+			[
+				"dashboards",
+				"resources\\views\\dashboard_session.blade.php"
+			],
+			[
+				"senarai_cagaran_tamat",
+				"resources\\views\\cagaran\\senarai_cagaran_tamat_tempoh.blade.php"
+			],
+			[
+				"maklumat_kutipan_list",
+				"resources\\views\\maklumatkutipan\\maklumat_kutipan_list.blade.php"
+			],
+			[
+				"laporanmakl",
+				"app\\Http\\Controllers\\MaklumatKutipan\\LaporanKemaskiniKutipanController.php"
+			],
+			[
+				"database",
+				"config\\database.php"
+			],
+			[
+				"brea",
+				"app\\Http\\Routes\\breadcrumbs.php"
+			],
+			[
+				"bread",
+				"config\\breadcrumbs.php"
+			],
+			[
+				"kutipanr",
+				"app\\Http\\Routes\\MaklumatKutipanRoutes.php"
+			],
+			[
+				"paparan_kelo",
+				"resources\\views\\warta\\paparan_kelompok_warta.blade.php"
+			],
+			[
+				"komen",
+				"resources\\views\\warta\\komen_ydpModal.blade.php"
+			],
+			[
+				"warta",
+				"app\\Http\\Routes\\WartaRoutes.php"
+			],
+			[
+				"wartar",
+				"app\\Http\\Routes\\WartaRoutes.php"
+			],
+			[
+				"terimaananm",
+				"app\\Http\\Controllers\\Warta\\TerimaanANMController.php"
+			],
+			[
+				"prosesw",
+				"app\\Http\\Controllers\\Warta\\ProsesWartaController.php"
+			],
+			[
+				"global",
+				"resources\\views\\global_script.blade.php"
+			],
+			[
+				"tuntu",
+				"app\\Http\\Controllers\\Tuntutan\\TuntutanController.php"
+			],
+			[
+				"ulasan_pt",
+				"resources\\views\\tuntutan\\semakan_ulasan_ptj.blade.php"
+			],
+			[
+				"ulasan_",
+				"resources\\views\\cagaran\\ulasan_pembatalan.blade.php"
+			],
+			[
+				"ulasan_pembatalan",
+				"resources\\views\\cagaran\\ulasan_pembatalan.blade.php"
+			],
+			[
+				"ula",
+				"resources\\views\\cagaran\\ulasan_rampasan.blade.php"
+			],
+			[
+				"datab",
+				"config\\database.php"
+			],
+			[
+				"senarai_cagaran_tamt",
+				"resources\\views\\cagaran\\senarai_cagaran_tamat_tempoh.blade.php"
+			],
+			[
+				"terimaan_war",
+				"resources\\views\\warta\\terimaan_warta_kelompok_batal.blade.php"
+			],
+			[
+				"errorexception",
+				"vendor\\psy\\psysh\\src\\Psy\\Exception\\ErrorException.php"
+			],
+			[
+				"handler",
+				"app\\Exceptions\\Handler.php"
+			],
+			[
+				"paparan",
+				"resources\\views\\warta\\paparan_kelompok_warta.blade.php"
+			],
+			[
+				"kfg_jen",
+				"resources\\views\\konfigurasi\\kfg_jenis_bayaran.blade.php"
+			],
+			[
+				"sidebar",
+				"resources\\views\\sidebar.blade.php"
+			],
+			[
+				"papara",
+				"resources\\views\\warta\\paparan_kelompok_warta.blade.php"
+			],
+			[
+				"dataen",
+				"app\\Http\\Controllers\\DataEntryController.php"
+			],
+			[
+				"kelompo",
+				"resources\\views\\warta\\kelompok_warta.blade.php"
+			],
+			[
+				"kfgm",
+				"app\\Models\\KfgMenu.php"
+			],
+			[
+				"cagarantidak",
+				"resources\\views\\cagaran\\cagaranTidakDituntut.blade.php"
+			],
+			[
+				"kfgmen",
+				"app\\Models\\KfgMenu.php"
+			],
+			[
+				"kelompok",
+				"app\\Http\\Controllers\\Warta\\KelompokWartaController.php"
+			],
+			[
+				"globalcom",
+				"app\\Http\\ViewComposers\\GlobalComposer.php"
+			],
+			[
+				"kfgme",
+				"app\\Models\\KfgMenu.php"
+			],
+			[
+				"authenticate",
+				"app\\Http\\Middleware\\Authenticate.php"
+			],
+			[
+				"authcon",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"logincon",
+				"app\\Http\\Controllers\\Login\\LoginController.php"
+			],
+			[
+				"pelan",
+				"resources\\views\\pelanggan_pendaftaran.blade.php"
+			],
+			[
+				"penda",
+				"public\\assets\\pages\\scripts\\pendaftaran-pelanggan-wizard.js"
+			],
+			[
+				"bonsai",
+				"public\\assets\\global\\scripts\\jquery.bonsai.js"
+			],
+			[
+				"terimaanan",
+				"app\\Http\\Controllers\\Warta\\TerimaanANMController.php"
+			],
+			[
+				"pembatal",
+				"app\\Http\\Controllers\\Warta\\PembatalanMaklumatWartaController.php"
+			],
+			[
+				"terimaan_wara",
+				"resources\\views\\warta\\terimaan_warta_kelompok_batal.blade.php"
+			],
+			[
+				"pembatalan",
+				"resources\\views\\warta\\pembatalan_warta_kelompok_index.blade.php"
+			],
+			[
+				"kfgmn",
+				"app\\Models\\KfgMenu.php"
+			],
+			[
+				"rampasan",
+				"app\\Http\\Controllers\\Cagaran\\RampasanController.php"
+			],
+			[
+				"kelo",
+				"resources\\views\\warta\\kelompok_warta.blade.php"
+			],
+			[
+				"cagantida",
+				"app\\Http\\Controllers\\Cagaran\\CagaranTidakDituntutController.php"
+			],
+			[
+				"global_script",
+				"resources\\views\\global_script.blade.php"
+			],
+			[
+				"37e13e97761e71914257ce30575d11c3469e535a.php",
+				"storage\\framework\\views\\37e13e97761e71914257ce30575d11c3469e535a.php"
+			],
+			[
+				"side",
+				"resources\\views\\sidebar.blade.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\xampp\\htdocs\\gates\\practice\\learning-laravel-5.2\\learning-laravel-5.2.sublime-project"
+			],
+			[
+				"nek",
+				"C:\\Users\\Zyten\\Documents\\Sublime Projects\\nekoneko.sublime-project"
+			],
+			[
+				"lea",
+				"C:\\xampp\\htdocs\\gates\\practice\\learning-laravel-5.2\\learning-laravel-5.2.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 354.0,
+		"last_filter": "constr",
+		"selected_items":
+		[
+			[
+				"constr",
+				"construct"
+			]
+		],
+		"width": 1038.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 270.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
