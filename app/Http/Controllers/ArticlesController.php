@@ -3,17 +3,17 @@
 namespace App\Http\Controllers;
 
 //use Illuminate\Http\Request; // dependecy injection
-use Request; 				   // alias for lluminate\Support\Facades\Request::class
-
+use Request;
 use App\Article;
-use App\Http\Requests;
 use Carbon\Carbon;
+use App\Http\Requests;
+use App\Http\Requests\CreateArticleRequest;
 
 class ArticlesController extends Controller
 {
     public function index()
     {
-    	$articles = Article::latest('published_at')->get(); //Article::order_by('published_at' => 'desc'); (default = created_at)
+    	$articles = Article::latest('published_at')->published()->orderBy('created_at', 'desc')->get(); //Article::order_by('published_at' => 'desc'); (default = created_at)
 
     	return view('articles.index', compact('articles'));
     }
@@ -30,13 +30,27 @@ class ArticlesController extends Controller
     	return view('articles.create');
     }
 
-    public function store() 
+    //Using Form Request - separate validation fron controller login
+    // public function store(CreateArticleRequest $request) 
+    // {
+    // 	Article::create($request->all());
+
+    // 	return redirect('articles');
+    // }
+
+    //Validate within controller login - more feasible for basic stuff e.g. MPS should definitely us Form Request (logic itself is quite long)
+    public function store(\Illuminate\Http\Request $request) 
     {
-    	$input = Request::all();
-    	$input['published_at'] = Carbon::now();
+        $rules = [
+            'title' => 'required|min:3',
+            'body' => 'required',
+            'published_at' => 'required|date'
+        ];
 
-    	Article::create($input);
+        $this->validate($request, $rules);
 
-    	return redirect('articles');
+        Article::create($request->all());
+
+        return redirect('articles');
     }
 }
