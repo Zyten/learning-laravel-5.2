@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-//use Illuminate\Http\Request; // dependecy injection
-use Request;
+//use Illuminate\Http\Request;   // for dependecy injection
+//use Request;                   // Illuminate\Support\Facades\Request
 use App\Article;
-use Carbon\Carbon;
-use App\Http\Requests;
-use App\Http\Requests\CreateArticleRequest;
+use App\Http\Requests\ArticleRequest;
+use Illuminate\Http\Request;
 
 class ArticlesController extends Controller
 {
@@ -31,26 +30,42 @@ class ArticlesController extends Controller
     }
 
     //Using Form Request - separate validation fron controller login
-    // public function store(CreateArticleRequest $request) 
-    // {
-    // 	Article::create($request->all());
-
-    // 	return redirect('articles');
-    // }
-
-    //Validate within controller login - more feasible for basic stuff e.g. MPS should definitely us Form Request (logic itself is quite long)
-    public function store(\Illuminate\Http\Request $request) 
+    public function store(ArticleRequest $request) 
     {
-        $rules = [
-            'title' => 'required|min:3',
-            'body' => 'required',
-            'published_at' => 'required|date'
-        ];
+    	Article::create($request->all());
 
-        $this->validate($request, $rules);
+    	return redirect('articles');
+    }
 
-        Article::create($request->all());
+    public function edit($id) 
+    {
+        $article = Article::findOrFail($id);
+
+        return view('articles.edit', compact('article'));
+    }
+
+    public function update($id, ArticleRequest $request) 
+    {
+        $article = Article::findOrFail($id);
+        
+        $article->update($request->all());
 
         return redirect('articles');
     }
+
+    //Validate within controller login - more feasible for basic stuff e.g. MPS should definitely us Form Request (logic itself is quite long)
+    // public function store(\Illuminate\Http\Request $request) 
+    // {
+    //     $rules = [
+    //         'title' => 'required|min:3',
+    //         'body' => 'required',
+    //         'published_at' => 'required|date'
+    //     ];
+
+    //     $this->validate($request, $rules);
+
+    //     Article::create($request->all());
+
+    //     return redirect('articles');
+    // }
 }
