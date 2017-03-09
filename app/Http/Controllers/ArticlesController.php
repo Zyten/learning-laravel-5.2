@@ -5,18 +5,32 @@ namespace App\Http\Controllers;
 //use Illuminate\Http\Request;   // for dependecy injection
 //use Request;                   // Illuminate\Support\Facades\Request
 use App\Article;
-use App\Http\Requests\ArticleRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\ArticleRequest;
 
 class ArticlesController extends Controller
 {
     /**
+     * Create a new articles controller instance.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => ['create']]);
+        // $this->middleware('middleware_key', ['only/except' => ['method', 'method']]);
+        // $this->middleware('middleware_key');
+    }
+
+    /**
      * Display all articles
+     * 
      * @return Response
      */
     public function index()
     {
-    	$articles = Article::latest('published_at')->published()->orderBy('created_at', 'desc')->get(); //Article::order_by('published_at' => 'desc'); (default = created_at)
+
+    	$articles = Article::latest('published_at')->published()->orderBy('published_at', 'desc')->get(); 
+        //Article::order_by('published_at' => 'desc'); (default = created_at)
 
     	return view('articles.index', compact('articles'));
     }
@@ -35,10 +49,15 @@ class ArticlesController extends Controller
 
     /**
      * Display form to create a new article
+     * 
      * @return Response
      */
     public function create() 
     {
+        // Without middleware
+        // if (Auth::guest()) {
+        //     return redirect('articles');
+        // }
     	return view('articles.create');
     }
 
@@ -49,7 +68,11 @@ class ArticlesController extends Controller
      */
     public function store(ArticleRequest $request) 
     {
-    	Article::create($request->all());
+        $article = new Article($request->all());
+        Auth::user()->articles()->save($article); //uses Eloquent relationship
+
+        // $request['user_id'] = Auth::user()->id; //what I'd normally do
+    	// Article::create($request->all()); //replaced in L15
 
     	return redirect('articles');
     }

@@ -15,7 +15,8 @@ class Article extends Model
 	protected $fillable = [
 		'title',
 		'body',
-		'published_at'
+		'published_at',
+		'user_id'
 	];
 
 	/**
@@ -56,6 +57,16 @@ class Article extends Model
 	{
 		//$this->attributes['published_at'] = Carbon::createFromFormat('Y-m-d', $date); //stores current time
 		$this->attributes['published_at'] = Carbon::parse($date); //midnight
+	}
+
+	/**
+	 * An article is owned by a user.
+	 * 
+	 * @return \Illuminate\Database\Relations\BelongsTo
+	 */
+	public function user()
+	{
+		return $this->belongsTo('App\User');
 	}
 }
 
