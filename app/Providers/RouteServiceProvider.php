@@ -24,9 +24,20 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        //
-
         parent::boot($router);
+
+        // #1 or Route::model() 
+        // Assume Route::get('foo/{bar}') in router.php
+        // $router->model('bar', 'App\Bar'); // binds key 'bar' with model 'App\bar' (param #1 and #2)
+        // The controller method can now read an instance of the model object itself (Laravel queries using $id behind the scenes)
+        $router->model('articles', 'App\Article'); //direct bind for simple use cases
+
+        // #2 For more complex use cases with constraints:
+        // $router->bind('articles', function($id) 
+        // {
+        //      // perform constraints and return model object
+        //      return \App\Article::published()->findOrFail($id);
+        // });
     }
 
     /**

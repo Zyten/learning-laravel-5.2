@@ -228,53 +228,107 @@
 	"buffers":
 	[
 		{
-			"contents": "",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app/Http/routes.php",
 			"settings":
 			{
-				"buffer_size": 881,
+				"buffer_size": 1215,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<?php\n\nnamespace App\\Http\\Controllers;\n\n//use Illuminate\\Http\\Request; // dependecy injection\nuse Request;\nuse App\\Article;\nuse Carbon\\Carbon;\nuse App\\Http\\Requests;\nuse App\\Http\\Requests\\CreateArticleRequest;\n\nclass ArticlesController extends Controller\n{\n    public function index()\n    {\n    \t$articles = Article::latest('published_at')->published()->orderBy('created_at', 'desc')->get(); //Article::order_by('published_at' => 'desc'); (default = created_at)\n\n    \treturn view('articles.index', compact('articles'));\n    }\n\n    public function show($id) \n    {\n    \t$article = Article::findOrFail($id);\n\n    \treturn view('articles.show', compact('article'));\n    }\n\n    public function create() \n    {\n    \treturn view('articles.create');\n    }\n\n    //Using Form Request - separate validation fron controller login\n    // public function store(CreateArticleRequest $request) \n    // {\n    // \tArticle::create($request->all());\n\n    // \treturn redirect('articles');\n    // }\n\n    //Validate within controller login - more feasible for basic stuff e.g. MPS should definitely us Form Request (logic itself is quite long)\n    public function store(\\Illuminate\\Http\\Request $request) \n    {\n        $rules = [\n            'title' => 'required|min:3',\n            'body' => 'required',\n            'published_at' => 'required|date'\n        ];\n\n        $this->validate($request, $rules);\n\n        Article::create($request->all());\n\n        return redirect('articles');\n    }\n\n    public function edit($id) \n    {\n        $article = Article::findOrFail($id);\n    }\n}",
+			"file": "app/Http/Middleware/Demo.php",
+			"settings":
+			{
+				"buffer_size": 446,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/laravel/framework/src/Illuminate/Http/Request.php",
+			"settings":
+			{
+				"buffer_size": 23816,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Kernel.php",
+			"settings":
+			{
+				"buffer_size": 1661,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/User.php",
+			"settings":
+			{
+				"buffer_size": 1098,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Middleware/RedirectIfNotAManager.php",
+			"settings":
+			{
+				"buffer_size": 628,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "app/Http/Controllers/ArticlesController.php",
-			"file_size": 1570,
-			"file_write_time": 131335217814519206,
 			"settings":
 			{
-				"buffer_size": 1561,
+				"buffer_size": 3260,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "[\n  { \"keys\": [\"ctrl+;\"], \"command\": \"append_semi_colon\" }, \n  { \"keys\": [\"ctrl+shift+;\"], \"command\": \"append_semi_colon\", \"args\": {\"enter_new_line\": \"true\"} }\n]\n",
-			"file": "/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/AppendSemiColon/Default.sublime-keymap",
-			"file_size": -1,
-			"file_write_time": -1,
+			"file": "vendor/symfony/routing/Tests/RouteTest.php",
 			"settings":
 			{
-				"buffer_size": 162,
-				"line_ending": "Windows",
-				"read_only": true,
-				"scratch": true
+				"buffer_size": 12741,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+			"file": "app/Http/Controllers/Auth/AuthController.php",
 			"settings":
 			{
-				"buffer_size": 810,
+				"buffer_size": 1934,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/articles/create.blade.php",
+			"settings":
+			{
+				"buffer_size": 303,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/articles/_form.blade.php",
+			"settings":
+			{
+				"buffer_size": 738,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+			"settings":
+			{
+				"buffer_size": 36028,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -285,10 +339,54 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 275.0,
-		"last_filter": "Package Control: ins",
+		"height": 277.0,
+		"last_filter": "art make m",
 		"selected_items":
 		[
+			[
+				"art make m",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"ar make",
+				"Laravel Artisan 5: Make:Auth"
+			],
+			[
+				"USer",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"pac ins",
+				"Package Control: Install Package"
+			],
+			[
+				"doc",
+				"Snippet: Start Docblock"
+			],
+			[
+				"phpdoc",
+				"PHPCompanion:Goto Definition Scope"
+			],
+			[
+				"dockr",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"sublimeL",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"ren",
+				"ANF: Rename File"
+			],
+			[
+				"re",
+				"ANF: Rename File"
+			],
+			[
+				"prmp",
+				"Package Control: Remove Package"
+			],
 			[
 				"Package Control: ins",
 				"Package Control: Install Package"
@@ -348,10 +446,6 @@
 			[
 				"Color",
 				"Colorsublime: Install Theme"
-			],
-			[
-				"pac ins",
-				"Package Control: Install Package"
 			],
 			[
 				"packageC instal",
@@ -445,14 +539,63 @@
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Exceptions",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/tests",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/bin"
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Middleware",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/emails",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/passwords",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/layouts",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/tests"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Console/Kernel.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Http/Request.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/User.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/symfony/routing/Router.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Providers/RouteServiceProvider.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/register.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/login.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RedirectsUsers.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/PagesController.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/passwords/reset.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/routes.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/layouts/master.blade.php",
+		"/C/xampp/htdocs/gates/practice/gates_mdec_5.3/resources/views/layouts/app.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/_form.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/create.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/ArticlesController.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations/2017_03_03_002141_create_articles_table.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Article.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/passwords/email.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/edit.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Requests/ArticleRequest.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/errors/list.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/App/Http/Requests/ArticleRequest.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/App/Http/Requests/ArticleRequest/ArticleRequest.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/ArticleRequest.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/ArticleName.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/ArticlesRequest.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Requests/CreateArticleRequest.php",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/AdvancedNewFile/Default (Windows).sublime-keymap",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/AdvancedNewFile/AdvancedNewFile.sublime-settings",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/AdvancedNewFile/README.md",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Requests/Request.php",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/AppendSemiColon/Default.sublime-keymap",
+		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/snippets/PHP Constructor.sublime-snippet",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/snippets/PHP Class.sublime-snippet",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/snippets/PHP Method.sublime-snippet",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/snippets/PHP Protected Method.sublime-snippet",
@@ -466,20 +609,13 @@
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/tests/TestCase.php",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/SimplePHPUnit.sublime-settings",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/SimplePHPUnit/SimplePHPUnit.sublime-settings",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/create.blade.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Requests/CreateArticleRequest.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Article.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/ArticlesController.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/config/app.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/show.blade.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/routes.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/index.blade.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/composer.json",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/bootstrap/app.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/pages/about.blade.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/pages/contact.blade.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/PagesController.php",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/Colorsublime/Colorsublime.sublime-settings",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/AController.php",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/Colorsublime.sublime-settings",
@@ -489,7 +625,6 @@
 		"/C/My Web Sites/Betty Bintar/demo.webisir.com/bintar/js/jquery.min.js",
 		"/C/My Web Sites/Betty Bintar/demo.webisir.com/bintar/js/main.js",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/PHP Companion.sublime-settings",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/Auth/AuthController.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/config/database.php",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/Origami.sublime-settings",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/config/compile.php",
@@ -499,8 +634,6 @@
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/Material Theme/messages.json",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/Material Theme/Material-Theme.sublime-theme",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/.env",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations/2014_10_12_000000_create_users_table.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations/2017_03_03_002141_create_articles_table.php",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations/2017_03_03_002729_add_excerpt_articles_table.php",
@@ -546,48 +679,18 @@
 		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/MaklumatKutipan/LaporanKemaskiniKutipanController.php",
 		"/C/xampp/htdocs/gates/project/mps-ecagar/storage/framework/views/791f6e060d8ec6128cd1c23e20e41a60a620f2d8.php",
 		"/C/xampp/htdocs/gates/project/mps-ecagar/storage/framework/views/67ea803a2f17ddf2c1f7213f8375fd32ec0cdd37.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/DashboardController.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/cagaran/senarai_cagaran_aktif.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/maklumatkutipan/maklumat_kutipan_list.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/MaklumatKutipan/MaklumatKutipanController.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Cagaran/CagaranController.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/maklumatkutipan/laporan_kemaskini_kutipan_list.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/cagaran/senarai_cagaran_tamat_tempoh.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/footerscript.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/global_script.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Routes/MaklumatKutipanRoutes.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/warta/paparan_kelompok_warta.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/pelanggan_pendaftaran.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Warta/KelompokWartaController.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Warta/ProsesWartaController.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/warta/proses_warta.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Cagaran/CagaranTamatTempohController.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/.env",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Routes/CagaranRoute.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/warta/kelompok_warta.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Models/CagaranChecklist.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/dashboard_session.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/dashboard.blade.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/vendor/laravel/framework/src/Illuminate/Http/Request.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/vendor/laravel/framework/src/Illuminate/Support/Facades/Input.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/vendor/symfony/console/Input/Input.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/storage/framework/views/93790fd6dd6ee2350bff006b527ecbebae93932e.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/resources/views/maklumatkutipan/maklumat_kutipan_list.blade.php.ruban",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/config/database.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Controller.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Warta/TerimaanANMController.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Routes/breadcrumbs.php",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/config/breadcrumbs.php"
+		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/DashboardController.php"
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 76.0
 	},
 	"find_in_files":
 	{
 		"height": 158.0,
 		"where_history":
 		[
+			"C:\\xampp\\htdocs\\gates\\practice\\learning-laravel-5.2\\resources\\views\\auth",
 			"C:\\xampp\\htdocs\\gates\\practice\\gates_mdec_entrust\\vendor",
 			"C:\\xampp\\htdocs\\gates\\practice\\laravel-5-boilerplate\\resources\\views",
 			"C:\\xampp\\htdocs\\gates\\project\\mps-idpelanggan\\app",
@@ -656,6 +759,11 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"logo",
+			"/lo",
+			"layouts.app",
+			"@extends('layouts.app')",
+			"Carbon",
 			"');",
 			"font",
 			"sds",
@@ -778,12 +886,7 @@
 			"index",
 			"cetak",
 			"left",
-			"selectAll",
-			"selectall",
-			"$('#cetakPukalForm').addClass('hidden');",
-			"$('#cetakPukalForm').removeClass('hidden');",
-			"$('#cetakPukalForm').addClass('hidden');",
-			"$('#cetakPukalForm').removeClass('hidden');"
+			"selectAll"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -791,6 +894,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"layouts.master",
+			"@extends('layouts.master')",
 			"37, 43, 57",
 			"$q1",
 			"$('#cetakPukalToggle').prop('disabled', true);",
@@ -856,15 +961,231 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "app/Http/routes.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								768,
+								768
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Middleware/Demo.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								331,
+								331
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 27.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "vendor/laravel/framework/src/Illuminate/Http/Request.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5664,
+								5667
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 1.0,
+						"translation.y": 9523.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Http/Kernel.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1611,
+								1611
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/User.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1098,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								727,
+								727
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Http/Middleware/RedirectIfNotAManager.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								300,
+								300
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/Http/Controllers/ArticlesController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								498,
+								498
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 404.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "vendor/symfony/routing/Tests/RouteTest.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12741,
 						"regions":
 						{
 						},
@@ -877,31 +1198,64 @@
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"git_gutter_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/Http/routes.php",
+					"buffer": 8,
+					"file": "app/Http/Controllers/Auth/AuthController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 881,
+						"buffer_size": 1934,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								878,
-								878
+								974,
+								926
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 590.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "resources/views/articles/create.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -913,24 +1267,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/ArticlesController.php",
+					"buffer": 10,
+					"file": "resources/views/articles/_form.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1561,
+						"buffer_size": 738,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1551,
-								1551
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9800,
+								9805
 							]
 						],
 						"settings":
@@ -941,75 +1324,23 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 964.0,
+						"translation.y": 13852.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/AppendSemiColon/Default.sublime-keymap",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 162,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								83,
-								83
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 810,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								548,
-								548
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 11,
 					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 32.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -1024,6 +1355,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -1034,6 +1371,7 @@
 		"rows":
 		[
 			0.0,
+			0.92125,
 			1.0
 		]
 	},
@@ -1050,7 +1388,7 @@
 	"project": "learning-laravel-5.2.sublime-project",
 	"replace":
 	{
-		"height": 60.0
+		"height": 126.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1060,12 +1398,172 @@
 		"selected_items":
 		[
 			[
-				"articlc",
-				"app\\Http\\Controllers\\ArticlesController.php"
+				"redirect",
+				"app\\Http\\Middleware\\RedirectIfNotAManager.php"
+			],
+			[
+				"us",
+				"app\\User.php"
+			],
+			[
+				"ker",
+				"app\\Http\\Kernel.php"
+			],
+			[
+				"route",
+				"app\\Http\\routes.php"
+			],
+			[
+				"user",
+				"app\\User.php"
 			],
 			[
 				"routes",
 				"app\\Http\\routes.php"
+			],
+			[
+				"kerne",
+				"app\\Http\\Kernel.php"
+			],
+			[
+				"",
+				"app\\Http\\Middleware\\Demo.php"
+			],
+			[
+				"/illuminate/http/request",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Http\\Request.php"
+			],
+			[
+				"kernel",
+				"app\\Console\\Kernel.php"
+			],
+			[
+				"rote",
+				"vendor\\symfony\\routing\\Tests\\RouteTest.php"
+			],
+			[
+				"authco",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"art",
+				"app\\Http\\Controllers\\ArticlesController.php"
+			],
+			[
+				"articlesc",
+				"app\\Http\\Controllers\\ArticlesController.php"
+			],
+			[
+				"artc",
+				"app\\Http\\Controllers\\ArticlesController.php"
+			],
+			[
+				"_form",
+				"resources\\views\\articles\\_form.blade.php"
+			],
+			[
+				"articles/c",
+				"resources\\views\\articles\\create.blade.php"
+			],
+			[
+				"artic",
+				"app\\Http\\Controllers\\ArticlesController.php"
+			],
+			[
+				"router",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php"
+			],
+			[
+				"routeser",
+				"app\\Providers\\RouteServiceProvider.php"
+			],
+			[
+				"authenticats",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesUsers.php"
+			],
+			[
+				"authcon",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"authcontroller",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"logi",
+				"resources\\views\\auth\\login.blade.php"
+			],
+			[
+				"pages",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				"authc",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"login",
+				"resources\\views\\auth\\login.blade.php"
+			],
+			[
+				"rese",
+				"resources\\views\\auth\\passwords\\reset.blade.php"
+			],
+			[
+				"register",
+				"resources\\views\\auth\\register.blade.php"
+			],
+			[
+				"master",
+				"resources\\views\\layouts\\master.blade.php"
+			],
+			[
+				"login.b",
+				"resources\\views\\auth\\login.blade.php"
+			],
+			[
+				"article",
+				"app\\Article.php"
+			],
+			[
+				"ar",
+				"app\\Article.php"
+			],
+			[
+				"a",
+				"app\\Article.php"
+			],
+			[
+				"create",
+				"resources\\views\\articles\\create.blade.php"
+			],
+			[
+				"articlec",
+				"app\\Http\\Controllers\\ArticlesController.php"
+			],
+			[
+				"create_a",
+				"database\\migrations\\2017_03_03_002141_create_articles_table.php"
+			],
+			[
+				"articl",
+				"app\\Article.php"
+			],
+			[
+				"crea",
+				"resources\\views\\articles\\create.blade.php"
+			],
+			[
+				"createart",
+				"app\\Http\\Requests\\CreateArticleRequest.php"
+			],
+			[
+				"request",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Request.php"
+			],
+			[
+				"articlc",
+				"app\\Http\\Controllers\\ArticlesController.php"
 			],
 			[
 				"appse",
@@ -1084,15 +1582,7 @@
 				"app\\Http\\Requests\\CreateArticleRequest.php"
 			],
 			[
-				"article",
-				"app\\Article.php"
-			],
-			[
 				"articles/cr",
-				"resources\\views\\articles\\create.blade.php"
-			],
-			[
-				"create",
 				"resources\\views\\articles\\create.blade.php"
 			],
 			[
@@ -1102,14 +1592,6 @@
 			[
 				"app.",
 				"config\\app.php"
-			],
-			[
-				"master",
-				"resources\\views\\layouts\\master.blade.php"
-			],
-			[
-				"artic",
-				"app\\Http\\Controllers\\ArticlesController.php"
 			],
 			[
 				"compos",
@@ -1128,14 +1610,6 @@
 				"resources\\views\\pages\\about.blade.php"
 			],
 			[
-				"route",
-				"app\\Http\\routes.php"
-			],
-			[
-				"articlesc",
-				"app\\Http\\Controllers\\ArticlesController.php"
-			],
-			[
 				"pagesc",
 				"app\\Http\\Controllers\\PagesController.php"
 			],
@@ -1144,28 +1618,12 @@
 				"app\\Http\\Controllers\\Auth\\AuthController.php"
 			],
 			[
-				"authc",
-				"app\\Http\\Controllers\\Auth\\AuthController.php"
-			],
-			[
-				"",
-				"C:\\Users\\Zyten\\Documents\\Sublime\\snippets\\PHP Method.sublime-snippet"
-			],
-			[
 				"app",
 				"config\\app.php"
 			],
 			[
-				"pages",
-				"app\\Http\\Controllers\\PagesController.php"
-			],
-			[
 				".env",
 				".env"
-			],
-			[
-				"login",
-				"resources\\views\\auth\\login.blade.php"
 			],
 			[
 				"app.p",
@@ -1194,10 +1652,6 @@
 			[
 				"reset2",
 				"resources\\views\\auth\\passwords\\reset2.blade.php"
-			],
-			[
-				"rese",
-				"resources\\views\\auth\\passwords\\reset.blade.php"
 			],
 			[
 				"portal",
@@ -1262,10 +1716,6 @@
 			[
 				"loginc",
 				"app\\Http\\Controllers\\Login\\LoginController.php"
-			],
-			[
-				"register",
-				"resources\\views\\frontend\\auth\\register.blade.php"
 			],
 			[
 				"rolecontroller",
@@ -1458,118 +1908,6 @@
 			[
 				"kutipanr",
 				"app\\Http\\Routes\\MaklumatKutipanRoutes.php"
-			],
-			[
-				"paparan_kelo",
-				"resources\\views\\warta\\paparan_kelompok_warta.blade.php"
-			],
-			[
-				"komen",
-				"resources\\views\\warta\\komen_ydpModal.blade.php"
-			],
-			[
-				"warta",
-				"app\\Http\\Routes\\WartaRoutes.php"
-			],
-			[
-				"wartar",
-				"app\\Http\\Routes\\WartaRoutes.php"
-			],
-			[
-				"terimaananm",
-				"app\\Http\\Controllers\\Warta\\TerimaanANMController.php"
-			],
-			[
-				"prosesw",
-				"app\\Http\\Controllers\\Warta\\ProsesWartaController.php"
-			],
-			[
-				"global",
-				"resources\\views\\global_script.blade.php"
-			],
-			[
-				"tuntu",
-				"app\\Http\\Controllers\\Tuntutan\\TuntutanController.php"
-			],
-			[
-				"ulasan_pt",
-				"resources\\views\\tuntutan\\semakan_ulasan_ptj.blade.php"
-			],
-			[
-				"ulasan_",
-				"resources\\views\\cagaran\\ulasan_pembatalan.blade.php"
-			],
-			[
-				"ulasan_pembatalan",
-				"resources\\views\\cagaran\\ulasan_pembatalan.blade.php"
-			],
-			[
-				"ula",
-				"resources\\views\\cagaran\\ulasan_rampasan.blade.php"
-			],
-			[
-				"datab",
-				"config\\database.php"
-			],
-			[
-				"senarai_cagaran_tamt",
-				"resources\\views\\cagaran\\senarai_cagaran_tamat_tempoh.blade.php"
-			],
-			[
-				"terimaan_war",
-				"resources\\views\\warta\\terimaan_warta_kelompok_batal.blade.php"
-			],
-			[
-				"errorexception",
-				"vendor\\psy\\psysh\\src\\Psy\\Exception\\ErrorException.php"
-			],
-			[
-				"handler",
-				"app\\Exceptions\\Handler.php"
-			],
-			[
-				"paparan",
-				"resources\\views\\warta\\paparan_kelompok_warta.blade.php"
-			],
-			[
-				"kfg_jen",
-				"resources\\views\\konfigurasi\\kfg_jenis_bayaran.blade.php"
-			],
-			[
-				"sidebar",
-				"resources\\views\\sidebar.blade.php"
-			],
-			[
-				"papara",
-				"resources\\views\\warta\\paparan_kelompok_warta.blade.php"
-			],
-			[
-				"dataen",
-				"app\\Http\\Controllers\\DataEntryController.php"
-			],
-			[
-				"kelompo",
-				"resources\\views\\warta\\kelompok_warta.blade.php"
-			],
-			[
-				"kfgm",
-				"app\\Models\\KfgMenu.php"
-			],
-			[
-				"cagarantidak",
-				"resources\\views\\cagaran\\cagaranTidakDituntut.blade.php"
-			],
-			[
-				"kfgmen",
-				"app\\Models\\KfgMenu.php"
-			],
-			[
-				"kelompok",
-				"app\\Http\\Controllers\\Warta\\KelompokWartaController.php"
-			],
-			[
-				"globalcom",
-				"app\\Http\\ViewComposers\\GlobalComposer.php"
 			]
 		],
 		"width": 0.0
@@ -1582,7 +1920,7 @@
 		[
 			[
 				"",
-				"C:\\xampp\\htdocs\\gates\\practice\\learning-laravel-5.2\\learning-laravel-5.2.sublime-project"
+				"C:\\Users\\Zyten\\Documents\\Sublime\\nekoneko.sublime-project"
 			],
 			[
 				"nek",
@@ -1614,7 +1952,7 @@
 	},
 	"show_minimap": false,
 	"show_open_files": false,
-	"show_tabs": true,
+	"show_tabs": false,
 	"side_bar_visible": true,
 	"side_bar_width": 270.0,
 	"status_bar_visible": true,

@@ -37,13 +37,11 @@ class ArticlesController extends Controller
 
     /**
      * Display a single article
-     * @param  integer $id
+     * @param  Article      $article
      * @return Response
      */
-    public function show($id) 
+    public function show(Article $article) 
     {
-    	$article = Article::findOrFail($id);
-
     	return view('articles.show', compact('article'));
     }
 
@@ -79,26 +77,22 @@ class ArticlesController extends Controller
 
     /**
      * Display form to edit an article
-     * @param  integer $id
+     * @param  Article      $article
      * @return Response
      */
-    public function edit($id) 
+    public function edit(Article $article) 
     {
-        $article = Article::findOrFail($id);
-
         return view('articles.edit', compact('article'));
     }
 
     /**
      * Save updated article
-     * @param  integer         $id     
+     * @param  Article        $article     
      * @param  ArticleRequest $request
      * @return Response               
      */
-    public function update($id, ArticleRequest $request) 
-    {
-        $article = Article::findOrFail($id);
-        
+    public function update(Article $article, ArticleRequest $request) 
+    {     
         $article->update($request->all());
 
         return redirect('articles');
