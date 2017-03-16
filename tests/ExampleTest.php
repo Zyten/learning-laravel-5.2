@@ -14,6 +14,7 @@ class ExampleTest extends TestCase
     public function testBasicExample()
     {
         $this->visit('/')
-             ->see('Laraveld 5');
+             ->see('Welcome');
+        $this->assertTrue(true);
     }
 }
