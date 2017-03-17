@@ -68,6 +68,18 @@ class Article extends Model
 	{
 		return $this->belongsTo('App\User');
 	}
+
+	/**
+	 * Get the tags associated with the given article
+	 * belongsToMany = many2many, hasMany = one2many, hasOne = one2one, belongsTo = many2one
+	 * @return \Illuminate\Database\Relations\HasMany
+	 */
+	public function tags()
+	{
+		return $this->belongsToMany('App\Tag')->withTimestamps(); 
+		//withTimestamps() does not throw error for 5.2
+		//nonetheless, without it the timestamp columns are not populated
+	}
 }
 
 	//Query scopes = custom where clause that will be used a lot thoughout the app

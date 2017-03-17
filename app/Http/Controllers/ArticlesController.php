@@ -66,13 +66,38 @@ class ArticlesController extends Controller
      */
     public function store(ArticleRequest $request) 
     {
-        $article = new Article($request->all());
-        Auth::user()->articles()->save($article); //uses Eloquent relationship
+        // #3 Use Eloquent to get user_id and call the create method from the Article instance
+            Auth::user()->articles()->create($request->all());
 
-        // $request['user_id'] = Auth::user()->id; //what I'd normally do
-    	// Article::create($request->all()); //replaced in L15
+            // \Session::flash('flash_message', 'Your article has been created'); //  \Session = static call to global scope (x need import Session)
+        
+            // Flash #1 - cumborsome to make duplicate calls
+            // session()->flash('flash_message', 'Your article has been created'); //  use helper
+            // session()->flash('flash_message_important', true);
+            // return redirect('articles');
 
-    	return redirect('articles');
+            //Flash #2 - unified at return but the important part still feels cumborsome
+            // return redirect('articles')->with([
+            //     'flash_message'           => 'Your article has been created',
+            //     'flash_message_important' => true
+            // ]);
+
+            //Flash #3 - use package laracasts/flash
+            //Usage flash('message'); optional ->important() or success() or overlay()
+            // flash('Your article has been created');
+            flash()->success('Your article has been created');
+            // flash()->overlay('Your article has been created'); // need to add $('#flash-overlay-modal').modal(); to view
+            return redirect('articles');
+
+        // #2 Use Eloquent Relationshop to get user_id and save 
+            // $article = new Article($request->all());
+            // Auth::user()->articles()->save($article); //replaced in L20
+            // return redirect('articles');
+
+        // #1 Traditional what I'd do to get user_id
+            // $request['user_id'] = Auth::user()->id; //what I'd normally do
+        	// Article::create($request->all()); //replaced in L15
+    	    // return redirect('articles');
     }
 
     /**
