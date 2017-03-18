@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="{{ elixir('css/all.css') }}"> <!-- Generates from latest ver based on build/css/rev-manifest.json-->
 </head>
 <body>
+	@include('partials.nav')
+
 	<div class="container">
 	{{-- @include('partials.flash') --}}
 	@include('flash::message') <!-- View from package laracasts/flash. Quite similar with the custom partial above -->
