@@ -56,7 +56,9 @@ class ArticlesController extends Controller
         // if (Auth::guest()) {
         //     return redirect('articles');
         // }
-    	return view('articles.create');
+        
+        $tags = \App\Tag::lists('name', 'id');
+    	return view('articles.create', compact('tags'));
     }
 
     /**
@@ -67,27 +69,32 @@ class ArticlesController extends Controller
     public function store(ArticleRequest $request) 
     {
         // #3 Use Eloquent to get user_id and call the create method from the Article instance
-            Auth::user()->articles()->create($request->all());
+            // $article = Auth::user()->articles()->create($request->all());
+            // $article->tags()->attach($request->input('tag_list'));
+            // $article->syncTags($article, $request->input('tag_list')); //extracted to syncTags()
+            // The above extracted to createArticle()
+            $this->createArticle($request);
 
-            // \Session::flash('flash_message', 'Your article has been created'); //  \Session = static call to global scope (x need import Session)
-        
-            // Flash #1 - cumborsome to make duplicate calls
-            // session()->flash('flash_message', 'Your article has been created'); //  use helper
-            // session()->flash('flash_message_important', true);
-            // return redirect('articles');
+            //Flash #3 - use package laracasts/flash
+            //Usage flash('message'); optional ->important() or success() or overlay() (Read doc for details)
+            // flash('Your article has been created');
+            // flash()->overlay('Your article has been created'); // need to add $('#flash-overlay-modal').modal(); to view
+            flash()->success('Your article has been created');
+            return redirect('articles');
 
             //Flash #2 - unified at return but the important part still feels cumborsome
             // return redirect('articles')->with([
             //     'flash_message'           => 'Your article has been created',
             //     'flash_message_important' => true
             // ]);
+            
+            // Flash #1 - cumborsome to make duplicate calls
+            // session()->flash('flash_message', 'Your article has been created'); //  use helper
+            // session()->flash('flash_message_important', true);
+            // return redirect('articles');
 
-            //Flash #3 - use package laracasts/flash
-            //Usage flash('message'); optional ->important() or success() or overlay()
-            // flash('Your article has been created');
-            flash()->success('Your article has been created');
-            // flash()->overlay('Your article has been created'); // need to add $('#flash-overlay-modal').modal(); to view
-            return redirect('articles');
+            // Flash #0 - Normal me
+            // \Session::flash('flash_message', 'Your article has been created'); //  \Session = static call to global scope (x need import Session)
 
         // #2 Use Eloquent Relationshop to get user_id and save 
             // $article = new Article($request->all());
@@ -107,7 +114,8 @@ class ArticlesController extends Controller
      */
     public function edit(Article $article) 
     {
-        return view('articles.edit', compact('article'));
+        $tags = \App\Tag::lists('name', 'id');
+        return view('articles.edit', compact('article', 'tags'));
     }
 
     /**
@@ -119,8 +127,34 @@ class ArticlesController extends Controller
     public function update(Article $article, ArticleRequest $request) 
     {     
         $article->update($request->all());
+        // $article->tags()->sync($request->input('tag_list')); //attach, detach, sync for pivot tables - read up pls..
+        $this->syncTags($article, $request->input('tag_list')); //extracted to syncTags()
 
         return redirect('articles');
+    }
+
+    /**
+     * Sync up the list of tags in the database.
+     * @param  Article $article 
+     * @param  array   $tags    
+     */
+    private function syncTags(Article $article, array $tags) 
+    {
+        $article->tags()->sync($tags);
+    }
+
+    /**
+     * Save a new article.
+     * @param  ArticleRequest $request 
+     * @return Article           
+     */
+    private function createArticle(ArticleRequest $request) 
+    {
+        $article = Auth::user()->articles()->create($request->all());
+
+        $this->syncTags($article, $request->input('tag_list'));
+
+        return $article;
     }
 }
 

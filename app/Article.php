@@ -80,6 +80,17 @@ class Article extends Model
 		//withTimestamps() does not throw error for 5.2
 		//nonetheless, without it the timestamp columns are not populated
 	}
+	
+	/**
+	 * Get a list of tag ids associated with the current article 
+	 * Can't use getTagsAttribute() here coz we want that to return the name for listing ($article->tags)
+	 * This one will return the ids for preselecting in edit form
+	 * @return array
+	 */
+	public function getTagListAttribute() 
+	{
+		return $this->tags->lists('id')->all();
+	}
 }
 
 	//Query scopes = custom where clause that will be used a lot thoughout the app

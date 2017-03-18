@@ -7,6 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Tag extends Model
 {
 	/**
+	 * Fillable fields for a tag.
+	 * 
+	 * @var [type]
+	 */
+	protected $fillable = [
+		'name'
+	];
+
+	/**
 	 * Get the articles associated with the given tag
 	 * 
 	 * @return \Illuminate\Database\Relations\HasMany

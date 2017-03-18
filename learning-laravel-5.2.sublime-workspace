@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"name",
+				"session_name"
+			],
+			[
 				"publ",
 				"published_at"
 			],
@@ -228,213 +232,29 @@
 	"buffers":
 	[
 		{
-			"file": "app/Http/routes.php",
-			"settings":
-			{
-				"buffer_size": 1215,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/PagesController.php",
-			"settings":
-			{
-				"buffer_size": 991,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/welcome.blade.php",
-			"settings":
-			{
-				"buffer_size": 424,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Middleware/Demo.php",
-			"settings":
-			{
-				"buffer_size": 446,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "vendor/laravel/framework/src/Illuminate/Http/Request.php",
-			"settings":
-			{
-				"buffer_size": 23816,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Kernel.php",
-			"settings":
-			{
-				"buffer_size": 1661,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/User.php",
-			"settings":
-			{
-				"buffer_size": 1098,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Middleware/RedirectIfNotAManager.php",
-			"settings":
-			{
-				"buffer_size": 628,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Providers/RouteServiceProvider.php",
-			"settings":
-			{
-				"buffer_size": 2072,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 1370,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/css/all.css",
-			"settings":
-			{
-				"buffer_size": 213,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tests/ExampleTest.php",
-			"settings":
-			{
-				"buffer_size": 434,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/js/vendor/jquery.js",
-			"settings":
-			{
-				"buffer_size": 17,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "function () {"
-			}
-		},
-		{
-			"file": "public/css/vendor/normalize.css",
-			"settings":
-			{
-				"buffer_size": 28,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": ".normalize {"
-			}
-		},
-		{
-			"file": "resources/assets/coffee/module.coffee",
-			"settings":
-			{
-				"buffer_size": 12,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/assets/sass/app.scss",
-			"settings":
-			{
-				"buffer_size": 178,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/layouts/master.blade.php",
-			"settings":
-			{
-				"buffer_size": 492,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/build/rev-manifest.json",
-			"settings":
-			{
-				"buffer_size": 45,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/assets/sass/pages/home.scss",
-			"settings":
-			{
-				"buffer_size": 21,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/css/app.css",
-			"settings":
-			{
-				"buffer_size": 147,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/Http/Controllers/ArticlesController.php",
 			"settings":
 			{
-				"buffer_size": 3185,
+				"buffer_size": 5949,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "vendor/symfony/routing/Tests/RouteTest.php",
+			"file": "resources/views/articles/index.blade.php",
 			"settings":
 			{
-				"buffer_size": 12741,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/Auth/AuthController.php",
-			"settings":
-			{
-				"buffer_size": 1934,
+				"buffer_size": 495,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "resources/views/articles/create.blade.php",
+			"file": "resources/views/articles/show.blade.php",
 			"settings":
 			{
-				"buffer_size": 303,
+				"buffer_size": 314,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -442,16 +262,17 @@
 			"file": "resources/views/articles/_form.blade.php",
 			"settings":
 			{
-				"buffer_size": 738,
+				"buffer_size": 1326,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+			"file": "app/Article.php",
 			"settings":
 			{
-				"buffer_size": 36028,
+				"buffer_size": 2510,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -463,7 +284,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 277.0,
+		"height": 354.0,
 		"last_filter": "art make m",
 		"selected_items":
 		[
@@ -663,57 +484,67 @@
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Exceptions",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/build",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/build/css",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/css",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/js",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/assets",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/assets/coffee",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/assets/sass",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/assets/sass/pages",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/emails",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/passwords",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/layouts",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/phpunit"
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/css"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations/2017_03_17_000319_create_tags_table.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/node_modules/babel-core/node_modules/lodash/_baseForOwnRight.js",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Tag.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/create.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/_form.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/ArticlesController.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Cache/TagSet.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Article.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/symfony/routing/Tests/RouteTest.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laracasts/flash/src/Laracasts/Flash/functions.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/routes.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/PagesController.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Middleware/Demo.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Http/Request.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Kernel.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/User.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Middleware/RedirectIfNotAManager.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Providers/RouteServiceProvider.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/css/all.css",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/tests/ExampleTest.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/js/vendor/jquery.js",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/css/vendor/normalize.css",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/assets/coffee/module.coffee",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/assets/sass/app.scss",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/layouts/master.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/config/app.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/partials/flash.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/index.blade.php",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/assets/sass/pages/home.scss",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/css/app.css",
+		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/gulpfile.js",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/js/app.js",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/js/app.js.map",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/output/final.js",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/output/final.css",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/css/all.css",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/public/css/all.css.map",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/tests/ExampleTest.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Console/Kernel.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Http/Request.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/User.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/symfony/routing/Router.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Providers/RouteServiceProvider.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/register.blade.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/login.blade.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RedirectsUsers.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/PagesController.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations/2014_10_12_000000_create_users_table.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/passwords/reset.blade.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/Auth/AuthController.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/routes.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/gates/practice/gates_mdec_5.3/resources/views/layouts/app.blade.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/_form.blade.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/create.blade.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Controllers/ArticlesController.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/database/migrations/2017_03_03_002141_create_articles_table.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Article.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/auth/passwords/email.blade.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/edit.blade.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/app/Http/Requests/ArticleRequest.php",
@@ -746,9 +577,7 @@
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/tests/TestCase.php",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/User/SimplePHPUnit.sublime-settings",
 		"/C/Users/Zyten/AppData/Roaming/Sublime Text 3/Packages/SimplePHPUnit/SimplePHPUnit.sublime-settings",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/config/app.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/show.blade.php",
-		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/articles/index.blade.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/composer.json",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/bootstrap/app.php",
 		"/C/xampp/htdocs/gates/practice/learning-laravel-5.2/resources/views/pages/about.blade.php",
@@ -791,30 +620,11 @@
 		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/backend/header.blade.php",
 		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/themes/modular-admin-html-1.1.0/dist/error-500-alt.html",
 		"/C/xampp/htdocs/gates/practice/gates_mdec/app/Http/routes.php",
-		"/C/xampp/htdocs/gates/practice/gates_mdec/app/Http/Routes/Frontend/AuthRoutes.php",
-		"/C/xampp/htdocs/gates/practice/gates_mdec/app/Http/Routes/Backend/DashboardRoutes.php",
-		"/C/xampp/htdocs/gates/practice/gates_mdec/app/Http/Controllers/Backend/DashboardController.php",
-		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/backend/dashboard.blade.php",
-		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/layouts/backend.blade.php",
-		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/errors/404.blade.php",
-		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/errors/500.blade.php",
-		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/backend/footerscript.blade.php",
-		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/auth/headerscript.blade.php",
-		"/C/xampp/htdocs/gates/practice/gates_mdec/resources/views/backend/headerscript.blade.php",
-		"/C/xampp/htdocs/gates/practice/gates_mdec/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/dashboard.html.dist",
-		"/C/xampp/htdocs/gates/project/mps-ecagar/app/Http/Controllers/Login/LoginController.php",
-		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/resources/assets/css/frontend/app.css",
-		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/gulpfile.js",
-		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/resources/views/frontend/auth/login.blade.php",
-		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/.env",
-		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/app/Http/Controllers/Backend/Access/Role/RoleController.php",
-		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/composer.json",
-		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/app/Http/Controllers/Backend/DashboardController.php",
-		"/C/xampp/htdocs/gates/practice/laravel-5-boilerplate/app/Http/Controllers/Backend/Access/User/UserController.php"
+		"/C/xampp/htdocs/gates/practice/gates_mdec/app/Http/Routes/Frontend/AuthRoutes.php"
 	],
 	"find":
 	{
-		"height": 76.0
+		"height": 77.0
 	},
 	"find_in_files":
 	{
@@ -890,6 +700,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"createArticle",
 			"binds",
 			"'); ",
 			"logo",
@@ -1016,8 +827,7 @@
 			"filter_card",
 			"cetak_makl",
 			"is_deleted",
-			"index",
-			"cetak"
+			"index"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1092,53 +902,55 @@
 	"groups":
 	[
 		{
-			"selected": 16,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/routes.php",
+					"file": "app/Http/Controllers/ArticlesController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1215,
+						"buffer_size": 5949,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								617,
-								617
+								4703,
+								4703
 							]
 						],
 						"settings":
 						{
 							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 126.0,
+						"translation.y": 3468.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/Http/Controllers/PagesController.php",
+					"file": "resources/views/articles/index.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 991,
+						"buffer_size": 495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								462,
+								462
 							]
 						],
 						"settings":
@@ -1151,140 +963,45 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "resources/views/welcome.blade.php",
+					"file": "resources/views/articles/show.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 424,
+						"buffer_size": 314,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								424,
-								424
+								189,
+								153
 							]
 						],
 						"settings":
 						{
 							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "app/Http/Middleware/Demo.php",
+					"file": "resources/views/articles/_form.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 446,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								331,
-								331
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 27.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "vendor/laravel/framework/src/Illuminate/Http/Request.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 23816,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5664,
-								5667
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 1.0,
-						"translation.y": 10663.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/Http/Kernel.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1661,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1611,
-								1611
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/User.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1098,
+						"buffer_size": 1326,
 						"regions":
 						{
 						},
@@ -1298,583 +1015,43 @@
 						"settings":
 						{
 							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/Http/Middleware/RedirectIfNotAManager.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 628,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								300,
-								300
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/Providers/RouteServiceProvider.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2072,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								990,
-								990
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 352.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1370,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1346,
-								1346
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 298.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "public/css/all.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "tests/ExampleTest.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 434,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								388,
-								388
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "public/js/vendor/jquery.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"auto_name": "function () {",
-							"git_gutter_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "public/css/vendor/normalize.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 28,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								26,
-								26
-							]
-						],
-						"settings":
-						{
-							"auto_name": ".normalize {",
-							"git_gutter_enabled": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "resources/assets/coffee/module.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12,
-								12
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"git_gutter_enabled": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "resources/assets/sass/app.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 178,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								118,
-								118
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "resources/views/layouts/master.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 492,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								356,
-								356
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "public/build/rev-manifest.json",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 45,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 411.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
-					"file": "resources/assets/sass/pages/home.scss",
+					"buffer": 4,
+					"file": "app/Article.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 21,
+						"buffer_size": 2510,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19,
-								19
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "public/css/app.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 147,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								51,
-								51
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "app/Http/Controllers/ArticlesController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3185,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2613,
-								2613
+								2235,
+								2235
 							]
 						],
 						"settings":
 						{
 							"git_gutter_enabled": true,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2119.0,
+						"translation.y": 2442.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "vendor/symfony/routing/Tests/RouteTest.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12741,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "app/Http/Controllers/Auth/AuthController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1934,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								974,
-								926
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 659.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "resources/views/articles/create.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 303,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "resources/views/articles/_form.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 738,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "vendor/laravel/framework/src/Illuminate/Routing/Router.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 36028,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9800,
-								9805
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 15511.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 25,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1887,7 +1064,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 38.0
+		"height": 39.0
 	},
 	"input":
 	{
@@ -1918,7 +1095,7 @@
 		"rows":
 		[
 			0.0,
-			0.92125,
+			0.942062572422,
 			1.0
 		]
 	},
@@ -1935,7 +1112,7 @@
 	"project": "learning-laravel-5.2.sublime-project",
 	"replace":
 	{
-		"height": 126.0
+		"height": 74.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1945,12 +1122,88 @@
 		"selected_items":
 		[
 			[
+				"create_ta",
+				"database\\migrations\\2017_03_17_000319_create_tags_table.php"
+			],
+			[
+				"artc",
+				"app\\Http\\Controllers\\ArticlesController.php"
+			],
+			[
 				"",
+				"resources\\views\\articles\\_form.blade.php"
+			],
+			[
+				"_form",
+				"resources\\views\\articles\\_form.blade.php"
+			],
+			[
+				"_forn",
+				"node_modules\\babel-core\\node_modules\\lodash\\_baseForOwnRight.js"
+			],
+			[
+				"a",
+				"app\\Article.php"
+			],
+			[
+				"articl",
+				"app\\Http\\Controllers\\ArticlesController.php"
+			],
+			[
+				"_for",
+				"resources\\views\\articles\\_form.blade.php"
+			],
+			[
+				"articles/",
+				"resources\\views\\articles\\show.blade.php"
+			],
+			[
+				"article",
+				"app\\Article.php"
+			],
+			[
+				"articles/i",
+				"resources\\views\\articles\\index.blade.php"
+			],
+			[
+				"arc",
+				"app\\Http\\Controllers\\ArticlesController.php"
+			],
+			[
+				"tag",
+				"app\\Tag.php"
+			],
+			[
+				"tags",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Cache\\TagSet.php"
+			],
+			[
+				"articlec",
+				"app\\Http\\Controllers\\ArticlesController.php"
+			],
+			[
+				"create",
+				"resources\\views\\articles\\create.blade.php"
+			],
+			[
+				"create_tag",
+				"database\\migrations\\2017_03_17_000319_create_tags_table.php"
+			],
+			[
+				"app.",
+				"config\\app.php"
+			],
+			[
+				"maste",
 				"resources\\views\\layouts\\master.blade.php"
 			],
 			[
 				"master",
 				"resources\\views\\layouts\\master.blade.php"
+			],
+			[
+				"articlesc",
+				"app\\Http\\Controllers\\ArticlesController.php"
 			],
 			[
 				"gul",
@@ -2029,18 +1282,6 @@
 				"app\\Http\\Controllers\\ArticlesController.php"
 			],
 			[
-				"articlesc",
-				"app\\Http\\Controllers\\ArticlesController.php"
-			],
-			[
-				"artc",
-				"app\\Http\\Controllers\\ArticlesController.php"
-			],
-			[
-				"_form",
-				"resources\\views\\articles\\_form.blade.php"
-			],
-			[
 				"articles/c",
 				"resources\\views\\articles\\create.blade.php"
 			],
@@ -2089,32 +1330,12 @@
 				"resources\\views\\auth\\login.blade.php"
 			],
 			[
-				"article",
-				"app\\Article.php"
-			],
-			[
 				"ar",
 				"app\\Article.php"
 			],
 			[
-				"a",
-				"app\\Article.php"
-			],
-			[
-				"create",
-				"resources\\views\\articles\\create.blade.php"
-			],
-			[
-				"articlec",
-				"app\\Http\\Controllers\\ArticlesController.php"
-			],
-			[
 				"create_a",
 				"database\\migrations\\2017_03_03_002141_create_articles_table.php"
-			],
-			[
-				"articl",
-				"app\\Article.php"
 			],
 			[
 				"crea",
@@ -2155,10 +1376,6 @@
 			[
 				"articlesco",
 				"app\\Http\\Controllers\\ArticlesController.php"
-			],
-			[
-				"app.",
-				"config\\app.php"
 			],
 			[
 				"compos",
@@ -2415,46 +1632,6 @@
 			[
 				"global_s",
 				"resources\\views\\global_script.blade.php"
-			],
-			[
-				"http/req",
-				"vendor\\laravel\\framework\\src\\Illuminate\\Http\\Request.php"
-			],
-			[
-				"illuminate/in",
-				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Input.php"
-			],
-			[
-				"input",
-				"vendor\\symfony\\console\\Input\\Input.php"
-			],
-			[
-				"93790fd6dd6ee2350bff006b527ecbebae93932e.php",
-				"storage\\framework\\views\\93790fd6dd6ee2350bff006b527ecbebae93932e.php"
-			],
-			[
-				"dashboarc",
-				"app\\Http\\Controllers\\DashboardController.php"
-			],
-			[
-				"dashbo",
-				"resources\\views\\dashboard.blade.php"
-			],
-			[
-				"dashboards",
-				"resources\\views\\dashboard_session.blade.php"
-			],
-			[
-				"senarai_cagaran_tamat",
-				"resources\\views\\cagaran\\senarai_cagaran_tamat_tempoh.blade.php"
-			],
-			[
-				"maklumat_kutipan_list",
-				"resources\\views\\maklumatkutipan\\maklumat_kutipan_list.blade.php"
-			],
-			[
-				"laporanmakl",
-				"app\\Http\\Controllers\\MaklumatKutipan\\LaporanKemaskiniKutipanController.php"
 			]
 		],
 		"width": 0.0
@@ -2500,7 +1677,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": false,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 270.0,
 	"status_bar_visible": true,
 	"template_settings":
