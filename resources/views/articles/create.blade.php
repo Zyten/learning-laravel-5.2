@@ -5,7 +5,7 @@
 	
 	<hr/>
 	
-	{!! Form::open(['url' => 'articles']) !!} <!-- action/named routes can be used as well -->
+	{!! Form::model($article = new \App\Article, ['url' => 'articles']) !!} <!-- action/named routes can be used as well -->
 		@include('articles._form', ['submitButtonText' => 'Add Article'])
 	{!! Form::close() !!}
 

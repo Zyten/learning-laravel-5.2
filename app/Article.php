@@ -60,6 +60,16 @@ class Article extends Model
 	}
 
 	/**
+	 * Get the published_at attribute
+	 * Accessor for date (Ensure any new instance of Article has a published_at not = null (default today))
+	 * @param  $date
+	 */
+	public function getPublishedAtAttribute($date) 
+	{
+		return Carbon::parse($date)->format('Y-m-d');
+	}
+
+	/**
 	 * An article is owned by a user.
 	 * 
 	 * @return \Illuminate\Database\Relations\BelongsTo

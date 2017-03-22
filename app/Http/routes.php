@@ -18,6 +18,9 @@ Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
 Route::resource('articles', 'ArticlesController'); //can test using artisan route:list
 
+Route::get('tags/{tags}', 'TagsController@show'); 
+//In order for Route Model Binding to work - the param name muz be = to the resource name (tags and tags)
+
 Route::get('foo', ['middleware' => 'manager', function()
 {
 	return 'is a manager';

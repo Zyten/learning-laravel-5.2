@@ -30,7 +30,7 @@ class RouteServiceProvider extends ServiceProvider
         // Assume Route::get('foo/{bar}') in router.php
         // $router->model('bar', 'App\Bar'); // binds key 'bar' with model 'App\bar' (param #1 and #2)
         // The controller method can now read an instance of the model object itself (Laravel queries using $id behind the scenes)
-        $router->model('articles', 'App\Article'); //direct bind for simple use cases
+        // $router->model('articles', 'App\Article'); //direct bind for simple use cases
 
         // #2 For more complex use cases with constraints:
         // $router->bind('articles', function($id) 
@@ -38,6 +38,18 @@ class RouteServiceProvider extends ServiceProvider
         //      // perform constraints and return model object
         //      return \App\Article::published()->findOrFail($id);
         // });
+
+        $router->bind('articles', function($id, \Illuminate\Routing\Route $route) {
+            // if ($route->getName() == 'articles.edit') //display edit form eventho unpublished
+            //     return \App\Article::findOrFail($id);
+            return \App\Article::published()->findOrFail($id); //only allow routes for published articles
+        });
+
+        // $router->model('tags', 'App\Tag');
+
+        $router->bind('tags', function($name) {
+            return \App\Tag::where('name', $name)->firstOrFail();
+        });
     }
 
     /**
